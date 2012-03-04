@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>     
+        <title>Rotator</title>  
+        <link href="rotator.css" type="text/css" rel="stylesheet" />
+        <script src="aFrame.js"></script>
+        <script src="rotator.js"></script>
+    	<style type="text/css">
+    	
+    	   html,body {
+    	       background: #334455;
+    	   }
+    	
+    	   .rotator {
+    	       position: relative;
+    	       width: 400px;
+    	       height: 600px;
+    	       margin: 50px auto;
+    	       background: #CCC;
+    	   }
+    	   
+    	</style>
+    </head>
+    
+    <body>
+       
+        <div id="myrotate" class="rotator">
+            <div class="rotator-icon"></div>
+        </div>
+        
+        <script type="text/javascript">
+        
+            rotator.create({
+                circumference : 400,
+                container : document.getElementById('myrotate'),
+                imageUrls : [
+                    '11.jpg',
+                    '10.jpg',
+                    '09.jpg',
+                    '08.jpg',
+                    '07.jpg',
+                    '06.jpg',
+                    '05.jpg',
+                    '04.jpg',
+                    '03.jpg',
+                    '02.jpg',
+                    '01.jpg'
+                ]
+            });
+            
+        </script>
+            
+    </body>
+    
+</html>

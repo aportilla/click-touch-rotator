@@ -1,0 +1,30 @@
+.rotator {
+   position: relative;
+   background: #CCC;
+}
+
+.rotator img {
+    cursor: url(openhand.cur), default;
+    cursor: -moz-grab;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.rotator .rotator-icon {
+    position: absolute;
+    width: 52px;
+    height: 30px;
+    left: 50%;
+    margin: -13px 0 0 -26px;
+    background: url(rotator-icon.png);
+    z-index: 2;
+}
+
+.rotator img.active {
+    cursor: url(closedhand.cur), default;
+    cursor: -moz-grabbing;
+}
